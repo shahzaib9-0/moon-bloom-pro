@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Moon Bloom – jewelry, makeup, accessories, and beauty tools. Shine with timeless beauty." />
+    <meta property="og:title" content="Moon Bloom" />
+    <meta property="og:description" content="Modern, elegant beauty shop – jewelry, makeup, accessories, tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" />
+    <title>Moon Bloom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo" aria-label="Moon Bloom home">
+          <span class="logo-glow"></span>
+          Moon Bloom
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="cart" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero section">
+        <div class="hero-bg" role="img" aria-label="Pastel beauty background"></div>
+        <div class="container hero-content reveal">
+          <h1 class="headline">Shine with timeless beauty.</h1>
+          <p class="subhead">Curated jewelry, makeup, and accessories inspired by the moon’s glow.</p>
+          <a href="#shop" class="btn primary">Shop the Collection</a>
+        </div>
+      </section>
+
+      <!-- Shop -->
+      <section id="shop" class="shop section">
+        <div class="container">
+          <div class="shop-header">
+            <h2 class="section-title reveal">Shop</h2>
+            <div class="search-wrap reveal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="productSearch" type="search" placeholder="Search jewelry, makeup, tools..." aria-label="Search products" />
+            </div>
+          </div>
+          <div class="product-grid">
+            <!-- Product Cards -->
+            <article class="card reveal" data-name="Lunar Pearl Necklace" data-category="jewelry">
+              <button class="image-btn" aria-label="View image of Lunar Pearl Necklace">
+                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3" alt="Lunar Pearl Necklace" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Lunar Pearl Necklace</h3>
+                <p class="card-text">Classic freshwater pearls with a moonlit sheen.</p>
+                <div class="card-footer">
+                  <span class="price">$68</span>
+                  <button class="btn add-to-cart" data-price="68">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Velvet Rose Lipstick" data-category="makeup">
+              <button class="image-btn" aria-label="View image of Velvet Rose Lipstick">
+                <img src="https://images.unsplash.com/photo-1512203492609-8f6f0ccf0b8b" alt="Velvet Rose Lipstick" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Velvet Rose Lipstick</h3>
+                <p class="card-text">Creamy satin formula for an all‑day glow.</p>
+                <div class="card-footer">
+                  <span class="price">$22</span>
+                  <button class="btn add-to-cart" data-price="22">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Celestial Hoops" data-category="jewelry">
+              <button class="image-btn" aria-label="View image of Celestial Hoops">
+                <img src="https://images.unsplash.com/photo-1520975960203-bc1ecf67fa9f" alt="Celestial Hoops" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Celestial Hoops</h3>
+                <p class="card-text">Lightweight gold hoops with a subtle shimmer.</p>
+                <div class="card-footer">
+                  <span class="price">$34</span>
+                  <button class="btn add-to-cart" data-price="34">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Moonbeam Brush Set" data-category="tools">
+              <button class="image-btn" aria-label="View image of Moonbeam Brush Set">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796" alt="Moonbeam Brush Set" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Moonbeam Brush Set</h3>
+                <p class="card-text">Ultra‑soft synthetic fibers for flawless blending.</p>
+                <div class="card-footer">
+                  <span class="price">$39</span>
+                  <button class="btn add-to-cart" data-price="39">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Starlit Pendant" data-category="jewelry">
+              <button class="image-btn" aria-label="View image of Starlit Pendant">
+                <img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65" alt="Starlit Pendant" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Starlit Pendant</h3>
+                <p class="card-text">Minimal charm that catches every glint of light.</p>
+                <div class="card-footer">
+                  <span class="price">$45</span>
+                  <button class="btn add-to-cart" data-price="45">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Aurora Palette" data-category="makeup">
+              <button class="image-btn" aria-label="View image of Aurora Palette">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Aurora Palette" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Aurora Palette</h3>
+                <p class="card-text">Pastel mattes and shimmers inspired by dawn.</p>
+                <div class="card-footer">
+                  <span class="price">$29</span>
+                  <button class="btn add-to-cart" data-price="29">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Silk Scrunchie Set" data-category="accessories">
+              <button class="image-btn" aria-label="View image of Silk Scrunchie Set">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Silk Scrunchie Set" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Silk Scrunchie Set</h3>
+                <p class="card-text">Gentle hold for glossy, crease‑free hair.</p>
+                <div class="card-footer">
+                  <span class="price">$18</span>
+                  <button class="btn add-to-cart" data-price="18">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-name="Jade Glow Roller" data-category="tools">
+              <button class="image-btn" aria-label="View image of Jade Glow Roller">
+                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="Jade Glow Roller" loading="lazy" />
+              </button>
+              <div class="card-body">
+                <h3 class="card-title">Jade Glow Roller</h3>
+                <p class="card-text">Cooling facial roller for instant radiance.</p>
+                <div class="card-footer">
+                  <span class="price">$24</span>
+                  <button class="btn add-to-cart" data-price="24">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about section">
+        <div class="container narrow">
+          <h2 class="section-title reveal">About Moon Bloom</h2>
+          <p class="reveal">
+            At Moon Bloom, we believe beauty is a gentle power. Our collection blends
+            elegance, craftsmanship, and care to help you glow with confidence—day or night.
+            From timeless jewelry to mindful beauty tools, every piece is chosen to empower
+            your rituals and celebrate your story.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact section">
+        <div class="container narrow">
+          <h2 class="section-title reveal">Contact</h2>
+          <form class="contact-form reveal" action="#" method="post" onsubmit="return false;">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p>© 2025 Moon Bloom. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Product image viewer">
+      <button class="lightbox-close" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button>
+      <img class="lightbox-img" alt="Expanded product image" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
